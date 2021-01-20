@@ -1,7 +1,6 @@
 import React from 'react'
-import { Box, Container } from '@/styles/components/form/animal'
+import { Box, Container, Input } from '@/styles/components/form/animal'
 
-import Input from '../input'
 import CheckboxInput from '../checkboxInput'
 
 interface CheckboxOption {

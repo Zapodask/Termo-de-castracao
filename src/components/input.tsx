@@ -8,7 +8,7 @@ interface Props {
 
 type InputProps = JSX.IntrinsicElements['input'] & Props
 
-const Input: React.FC<InputProps> = ({ name, label, ...rest }) => {
+export const Input: React.FC<InputProps> = ({ name, label, ...rest }) => {
   const inputRef = useRef<HTMLInputElement>(null)
 
   const { fieldName, defaultValue, registerField, error } = useField(name)
@@ -34,4 +34,5 @@ const Input: React.FC<InputProps> = ({ name, label, ...rest }) => {
     </>
   )
 }
+
 export default Input

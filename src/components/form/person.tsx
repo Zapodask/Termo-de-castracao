@@ -1,7 +1,5 @@
 import React from 'react'
-import { Container, Box } from '@/styles/components/form/person'
-
-import Input from '../input'
+import { Container, Box, Input } from '@/styles/components/form/person'
 
 const Person = () => {
     return (

@@ -9,8 +9,8 @@ const Pdf = () => {
             <div>
                 <p>Numero da ficha:</p>
                 <Input name='ficha' required/>
-                <button type='submit'>Gerar pdf</button>
             </div>
+            <button type='submit'>Gerar pdf</button>
         </Container>
     )
 }

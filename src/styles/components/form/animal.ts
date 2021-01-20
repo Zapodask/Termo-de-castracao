@@ -1,8 +1,13 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
+import {Input as unform} from '@/components/input'
 
 export const Container = styled.div`
-    height: 100%;
+    border: 1px solid black;
 `
 
 export const Box = styled.div`
+`
+
+export const Input = styled(unform)`
+    width: 80%
 `

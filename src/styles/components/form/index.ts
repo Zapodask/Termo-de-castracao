@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Form as Unform } from '@unform/web';
+import { Form as Unform } from '@unform/web'
 
 export const Container = styled.div`
     height: 80vh;
@@ -9,7 +9,7 @@ export const Container = styled.div`
 `
 export const Form = styled(Unform)`
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     height:100%;
 `
 
