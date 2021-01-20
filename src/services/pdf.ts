@@ -75,13 +75,14 @@ const makePdf = async (data: any) => {
     PersonName.setText(data.person.name)
 
     const Birthday = form.getTextField('Text17')
-    Birthday.setText(data.person.birthday)
+    const BirthdayFormatted = await data.person.birthday.replace(/(\d{2})(\d{2})(\d{4})/, "$1/$2/$3")
+    Birthday.setText(BirthdayFormatted)
 
     const Rg = form.getTextField('Text18')
     Rg.setText(data.person.rg)
 
     const Cpf = form.getTextField('Text19')
-    const CpfFormatted = await data.person.cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4");
+    const CpfFormatted = await data.person.cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4")
     Cpf.setText(CpfFormatted)
 
     const Address = form.getTextField('Text20')

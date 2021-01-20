@@ -13,7 +13,7 @@ const Person = () => {
             </Box>
             <Box>
                 <p>Data de nascimento:</p>
-                <Input name='birthday' type='date' />
+                <Input name='birthday' maxLength={8} placeholder='Ex: 21031997' />
             </Box>
             <Box>
                 <p>RG:</p>
